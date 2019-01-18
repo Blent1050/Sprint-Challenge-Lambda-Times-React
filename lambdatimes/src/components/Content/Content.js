@@ -24,7 +24,7 @@ export default class Content extends Component {
   }
 
   changeSelected = tab => {
-    console.log(tab)
+    this.setState({ selected: tab})
   };
 
   filterCards = () => {
