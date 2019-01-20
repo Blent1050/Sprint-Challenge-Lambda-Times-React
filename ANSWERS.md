@@ -1,0 +1,11 @@
+
+- [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+PropTypes are important because it allows us to check the data we are passing down for certain values. This is important because let's say you pass down a prop and for some reason it's undefined -- Your entire App would most likely crash if you relied on some information to be passed in. This is where a PropType check can help 1: Define where you are missing data and 2: Allow you to set default data in the event that the data is not passed down correcetly.
+- [ ] Describe a life-cycle event in React?
+A lifecycle event is are special methods react defined that will get executed based on three criteria : 1: The mounting of your component 2: The updating of your component 3: The death of your component. For example: componentDidMount() will run whatever code that is inside of it once the data is rendered to the DOM (e.g. after the first render call).
+- [ ] Explain the details of a Higher Order Component?
+I like to think of HOC as a container that will accept one component and return a new component that has additional functionality. This allows us to re-use a lot of our component code in multiple different components. An example I could think of is a button. Every button on your page will most likely require an event listener and when clicked, it will do something. You can define a button component that gets passed through a HOC and than returns a new button component with that functionality.
+- [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+1: Default CSS -> Benefits from traditional web-dev 'seperation of concerns'. Taking the styling out of your components can help you focus on just that -- the styling. 
+2: In-line styling -> This allows for quick proto-typing while building your app.( Definitely not recommended for producition )
+3: Styled-Components -> Styled components cuts down on the amount of files your project will use and helps other devs understand what is going on in your components quicker. This puts the styling inside of the component file instead of seperating it. 
